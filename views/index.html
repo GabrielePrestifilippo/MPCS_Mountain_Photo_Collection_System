@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="leaflet/dist/leaflet.js"></script>
+    <script src="leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/chosen.css">
+    <link rel="stylesheet" href="/css/image-picker.css">
+    <link href='/css/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div class="error"></div>
+    <div class="success"></div>
+
+
+    <div id="map"></div>
+    <div id="option">Menu</div>
+
+    <div id="menu">
+        <div id="contElem">
+            <form id="uno">
+                <select data-placeholder="Choose a Country..." class="chosen-select" style="width:90%; height:80px" tabindex="2">
+                    <option value=""></option>
+                </select>
+            </form>
+            <button id="searchbyName" class="btn">Search</button>
+            <br>
+            <button id="newMount" class="btn">New Mount</button>
+
+            <button id="scrapeImage" class="btn">Search Images</button>
+
+        </div>
+        <br>
+        <br>
+        <div id="contElem2">
+            <input id="geoname" type="text" placeholder="Etna, IT">
+            <input id="geolat" type="number" placeholder="37.11">
+            <input id="geolng" type="number" placeholder="14.56">
+            <button id="geocode" class="btn">Decode coordinates</button>
+            <br>
+            <button id="insMount" class="btn">Insert Mount</button>
+
+        </div>
+        <br>
+        <br>
+
+        <div id="contElem3">
+            <select id="chosen2" data-placeholder="Choose a Country..." class="chosen-select" style="width:90%; height:80px" tabindex="2">
+                <option value=""></option>
+            </select>
+            <div class="scrapeopt">
+                <input id="dbopt" type="checkbox">DbPedia</div>
+            <div class="scrapeopt">
+                <input id="flopt" type="checkbox">Flickr</div>
+            <div class="scrapeopt">
+                <input id="twopt" type="checkbox">Twitter</div>
+            <div class="scrapeopt">
+                <input id="fbopt" type="checkbox">Facebook</div>
+            <button id="scrapeStart" class="btn">Scrape</button>
+
+
+        </div>
+        <div id="contElem4"></div>
+    </div>
+
+
+    <script src="/js/image-picker.js"></script>
+    <script src="/js/chosen.jquery.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/page.js"></script>
+
+</body>
+
+</html>
